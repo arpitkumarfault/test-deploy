@@ -11,13 +11,13 @@ const Home = () => {
 
         <div className="flex space-x-4">
           <NavLink
-            to="/login"
+            to="/login" 
             className="px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition duration-200"
           >
             Log In
           </NavLink>
           <NavLink
-            to=""
+            to="/" 
             className="px-6 py-3 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 transition duration-200"
           >
             Sign Up
