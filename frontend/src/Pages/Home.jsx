@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -7,24 +8,24 @@ const Home = () => {
         <p className="text-lg text-gray-600 mb-8">
           Discover amazing content and join our community. Log in or sign up to get started!
         </p>
-        
+
         <div className="flex space-x-4">
-          <a
-            href="/login"
+          <NavLink
+            to="/login"
             className="px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition duration-200"
           >
             Log In
-          </a>
-          <a
-            href="/register"
+          </NavLink>
+          <NavLink
+            to=""
             className="px-6 py-3 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 transition duration-200"
           >
             Sign Up
-          </a>
+          </NavLink>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default Home;
+export default Home
