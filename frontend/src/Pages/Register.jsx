@@ -12,7 +12,7 @@ const Register = () => {
     e.preventDefault() 
 
     try {
-      const {data} = await axios.post(
+      const { data } = await axios.post(
         '/api/v3/user/register',
         { username, email, password },
         {
@@ -54,6 +54,12 @@ const Register = () => {
             className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
             required
           />
+          {/* NavLink for Verify Email */}
+          <p className="text-sm text-gray-500 mt-2">
+            <NavLink to="/verify" className="text-blue-500 hover:underline">
+              Verify your email here
+            </NavLink>
+          </p>
           <input
             type="password"
             placeholder="Password"
@@ -72,7 +78,7 @@ const Register = () => {
         </form>
 
         <p className="text-center text-gray-500 mt-4">
-          Already have an account?
+          Already have an account?{' '}
           <NavLink to="/login" className="text-blue-500 hover:underline">
             Log in
           </NavLink>

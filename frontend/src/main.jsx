@@ -6,6 +6,7 @@ import Layout from './Layout'
 import Home from './Pages/Home'
 import Register from './Pages/Register'
 import Login from './Pages/Login'
+import VerifyEmail from './Pages/VerifyEmail'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -13,6 +14,7 @@ const router = createBrowserRouter(
       <Route path="" element={<Register />} />
       <Route path="/login" element={<Login />} />
       <Route path="/home" element={<Home />} />
+      <Route path="/verify" element={<VerifyEmail />} />
     </Route>,
   ),
 )
